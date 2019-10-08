@@ -1,0 +1,7 @@
+.alt_btn  a:visited{text-decoration:none; color:#000; background:#CCC;}
+.alt_btn  a:hover{text-decoration:none; color:#FFF; background:#000}
+.error{color:red;padding:15px;}
+.success{color:blue; padding:10px 0 0 25px;}
+.task_menu{font-size:14px; padding:5px 10px; border:1px solid #ccc; border-radius:5px;}
+/*============Color=============*/
+.black{color:#000;}
