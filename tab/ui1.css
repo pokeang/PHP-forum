@@ -1,0 +1,184 @@
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav2 {
+        display: none;
+    }
+}
+
+/* Skin */
+/*.ui-tabs-nav2, .ui-tabs-panel {
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 19px;
+}*/
+.ui-tabs-nav2 {
+	float:left;
+	width:226px;
+	list-style: none;
+    margin:0px 0px 0px 10px;
+    padding: 0 0 0 0px;
+	border:0px solid red;
+	text-align:center;
+}
+
+.ui-tabs-nav2 li {
+    float: left;
+	display: inline;
+   /* height: 34px;*/
+    border:0px solid yellow;
+    padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	width:180px;
+	text-align:center;
+}
+
+.ui-tabs-nav2 a {
+    float:left;
+    display: block;
+    background:none;
+	text-decoration:none;
+    padding-left: 0;
+    white-space: nowrap; /* required in IE 6 */    
+    outline: 0; /* prevent dotted border in Firefox */
+}
+
+.ui-tabs-nav2 a span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:179px;  height:34px;
+    padding:7px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddle.png) left no-repeat;
+	text-align:center !important;
+}
+.ui-tabs-nav2 a span.left{
+    display:none;
+}
+.ui-tabs-nav2 a span.right{
+    float:right;
+    text-decoration: none;
+	width:11px; height:41px;
+    padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(menu_seperate.png) right no-repeat;
+}
+
+.ui-tabs-nav2 .ui-tabs-selected a {
+     float:left;
+    display: block;
+    background:none;
+}
+.ui-tabs-nav2 .ui-tabs-selected a span.middle, .ui-tabs-nav2 a:hover span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:179px;  height:34px;
+    padding:7px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddlefocus.png) left no-repeat;
+	text-align:center;
+}
+.ui-tabs-nav2 .ui-tabs-selected a span.left, .ui-tabs-nav2 a:hover span.left{
+    display:none;
+}
+.ui-tabs-nav2 .ui-tabs-selected a span.right, .ui-tabs-nav2 a:hover span.right{
+    float:left;
+    display: block;
+    text-decoration: none;
+    width:11px; height:40px;
+    padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px -5px;
+    border:0px solid #fff;
+    text-align: center;
+    background: url(menu_seperate.png) right no-repeat;
+}
+
+/*LATEST ITEM*/
+
+.ui-tabs-nav2 a.noseperate {
+    float:left;
+    display: block;
+	background:none;
+}
+
+.ui-tabs-nav2 a.noseperate span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:120px;  height:34px;
+    padding:7px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddle.png) left no-repeat;
+	text-align:center;
+}
+.ui-tabs-nav2 a.noseperate span.left{
+    display:none;
+}
+.ui-tabs-nav2 a.noseperate span.right{
+   display:none;
+}
+
+.ui-tabs-nav2 .ui-tabs-selected a.noseperate {
+     float:left;
+    display: block;
+    background:none;
+}
+.ui-tabs-nav2 .ui-tabs-selected a.noseperate span.middle, .ui-tabs-nav2 a.noseperate:hover span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:120px;  height:34px;
+    padding:7px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddlefocus.png) left no-repeat;
+    text-align:center;
+}
+.ui-tabs-nav2 .ui-tabs-selected a.noseperate span.left, .ui-tabs-nav2 a.noseperate:hover span.left{
+    display:none;
+}
+.ui-tabs-nav2 .ui-tabs-selected a.noseperate span.right, .ui-tabs-nav2 a.noseperate:hover span.right{
+    display:none;
+}
+
+/*End Latest ITEM*/
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited, .ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-deselectable a:hover, .ui-tabs-nav .ui-tabs-deselectable a:focus, .ui-tabs-nav .ui-tabs-deselectable a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-panel1 {
+	float:left;
+	width:100%;
+    border-top: 0px solid #d3d3d3;
+    padding: 0px 0px 15px 0px;;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+.ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}
+
+

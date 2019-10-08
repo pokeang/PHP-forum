@@ -1,0 +1,168 @@
+.ddsmoothtab{
+    width: 359px;
+    float: left;
+    height: 41px;
+    border:0px solid red;
+	padding:0px 0px 0px 3px;
+	margin:0px 0px 0px 0px;
+}
+
+.ddsmoothtab ul{
+    z-index:10;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border:0px solid red;
+    float: left;
+}
+
+/*Top level list items*/
+.ddsmoothtab ul li{
+    position: relative;
+    display: inline;
+    float: left;
+   /* height: 34px;*/
+    border:0px solid yellow;
+    padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+    z-index:3;
+}
+
+/*Top level menu link items style SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE*/
+.ddsmoothtab ul li a{
+     float:left;
+    display: block;
+    background:none;
+	text-decoration:none;
+}
+
+
+.ddsmoothtab ul li a span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:118px; height:41px;
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddle.png) left no-repeat;
+	text-align:center;
+}
+.ddsmoothtab ul li a span.left{
+    display:none;
+}
+.ddsmoothtab ul li a span.right{
+    float:right;
+    text-decoration: none;
+	width:11px; height:41px;
+    padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(menu_seperate.png) right no-repeat;
+}
+
+/*FOR SIMPLE RECORD ACTION :SELECTED, CURRENT, HOVER*/
+.ddsmoothtab ul li a.selected, .ddsmoothtab ul li a.current, .ddsmoothtab ul li a:hover{
+    float:left;
+    display: block;
+    background:none;
+}
+.ddsmoothtab ul li a.selected span.middle, .ddsmoothtab ul li a.current span.middle, .ddsmoothtab ul li a:hover span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:118px; height:41px;
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddlefocus.png) left no-repeat;
+	text-align:center;
+}
+.ddsmoothtab ul li a.selected span.left, .ddsmoothtab ul li a.current span.left, .ddsmoothtab ul li a:hover span.left{
+    display:none;
+}
+.ddsmoothtab ul li a.selected span.right, .ddsmoothtab ul li a.current span.right, .ddsmoothtab ul li a:hover span.right{
+    float:left;
+    display: block;
+    text-decoration: none;
+    width:11px; height:40px;
+    padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px -5px;
+    border:0px solid #fff;
+    text-align: center;
+    background: url(menu_seperate.png) right no-repeat;
+}
+/* END Top level menu link items style SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE SIMPLE*/
+
+/*Top level menu link items style  NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE*/
+.ddsmoothtab ul li.noseperate a{
+    float:left;
+    display: block;
+	background:none;
+}
+
+
+.ddsmoothtab ul li.noseperate a span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:120px; height:41px;
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddle.png) left no-repeat;
+	text-align:center;
+}
+.ddsmoothtab ul li.noseperate a span.left{
+    display:none;
+}
+.ddsmoothtab ul li.noseperate a span.right{
+    float:left;
+    display: block;
+    text-decoration: none;
+	width:11px; height:41px;
+    padding:0px 0px 0px 0px;
+    border:0px solid #fff;
+	background:none;
+}
+
+/*FOR SIMPLE RECORD ACTION :SELECTED, CURRENT, HOVER*/
+.ddsmoothtab ul li.noseperate a.selected, .ddsmoothtab ul li.noseperate a.current, .ddsmoothtab ul li.noseperate a:hover{
+     float:left;
+    display: block;
+    background:none;
+}
+.ddsmoothtab ul li.noseperate a.selected span.middle, .ddsmoothtab ul li.noseperate a.current span.middle, .ddsmoothtab ul li.noseperate a:hover span.middle{
+    float:left;
+    display: block;
+    color: #380231;
+    text-decoration: none;
+    width:120px; height:41px;
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    border:0px solid yellow;
+    background: url(tabmiddlefocus.png) left no-repeat;
+    text-align:center;
+}
+.ddsmoothtab ul li.noseperate a.selected span.left, .ddsmoothtab ul li.noseperate a.current span.left, .ddsmoothtab ul li.noseperate a:hover span.left{
+	display:none;
+}
+.ddsmoothtab ul li.noseperate a.selected span.right, .ddsmoothtab ul li.noseperate a.current span.right, .ddsmoothtab ul li.noseperate a:hover span.right{
+    display:none;
+}
+/* END Top level menu link items style NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE NO SEPERATE*/
+
+* html .ddsmoothtab ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+                              display: inline-block;
+}
+
+* html .ddsmoothtab ul li a.last{ /*IE6 hack to get sub menu links to behave correctly*/
+                                   display: inline-block;
+}
+
+
+
+<!------------------------------------------------------------->
